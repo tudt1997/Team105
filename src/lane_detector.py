@@ -11,7 +11,7 @@ class lane_detector:
     def cal_quadratic_smaller(self, a, b, c):
         delta = b**2. - 4.*a*c
         if delta < 0 or a == 0:
-            print("delta",delta)
+            # print("delta",delta)
             return float('inf')
         else:
             y1 = (-b - math.sqrt(delta))/(2.*a)
@@ -83,7 +83,7 @@ class lane_detector:
         # print("checksum_full" , checksum)
         # 2 lanes have similar function
         if (checksum <= 100):
-            print("checksum", checksum)
+            # print("checksum", checksum)
 
             min_nonzero_left_y = left_lane_inds[0]
             min_nonzero_right_y = right_lane_inds[0]
@@ -187,7 +187,7 @@ class lane_detector:
         return left_fit, right_fit, left_lane_inds, right_lane_inds, visualization_data
 
 
-    def find_middlePos(self, left_fit, right_fit, checksum):
+    def find_middlePos(self, left_fit, right_fit, checksum, is_turning):
         # middlePos_y = 120
         # middlePos_y2 = 240
 
@@ -212,7 +212,7 @@ class lane_detector:
             leftSide_x = left_fit[0] * middlePos_y ** 2 + left_fit[1] * middlePos_y + left_fit[2]
             rightSide_x = right_fit[0] * middlePos_y ** 2 + right_fit[1] * middlePos_y + right_fit[2]
 
-            if(checksum > 100):
+            if(checksum > 100 and not is_turning):
                 self.laneWidth = rightSide_x[0] - leftSide_x[0]
 
             # print("WIDTH ", rightSide_x - leftSide_x)
@@ -222,7 +222,7 @@ class lane_detector:
         return result
 
 
-    def lane_detect(self, source_img):
+    def lane_detect(self, source_img, is_turning):
         cv2.setUseOptimized(True)
         h, w = source_img.shape[:2]
         # define source and destination points for transform
@@ -250,8 +250,8 @@ class lane_detector:
         kernel = np.ones((3, 3), np.uint8)
         bin_out = cv2.dilate(bin_out, kernel,iterations=1)
 
-        cv2.imshow("white + shadow", bin_out)
-        cv2.waitKey(1)
+        # cv2.imshow("white + shadow", bin_out)
+        # cv2.waitKey(1)
 
         # Detect lines
         lines = cv2.HoughLinesP(bin_out, 2, np.pi / 180, 128, minLineLength=78,maxLineGap=10)
@@ -278,10 +278,10 @@ class lane_detector:
         left_fit, right_fit, \
         left_lane_inds, right_lane_inds, checksum = self.restrict_similar_function(left_fit, right_fit, left_lane_inds, right_lane_inds)
 
-        print(left_fit, right_fit)
+        # print(left_fit, right_fit)
         rectangles = visualization_data[0]
 
-        middlePos = self.find_middlePos(left_fit, right_fit, checksum)
+        middlePos = self.find_middlePos(left_fit, right_fit, checksum, is_turning)
         # print(middlePos)
 
         # draw middle line
@@ -321,8 +321,8 @@ class lane_detector:
         lane_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
         lane_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
 
-        cv2.imshow("Detect lane", lane_img)
-        cv2.waitKey(1)
+        # cv2.imshow("Detect lane", lane_img)
+        # cv2.waitKey(1)
 
         return out_img, middlePos
 

@@ -36,6 +36,9 @@ class car_control:
             self.speed_pub.publish(speed)
             self.steerAngle_pub.publish(steerAngle)
 
+        return self.is_turning
+
+
     def cal_steerAngle(self, sign, middlePos, diff):
         carPos_x, carPos_y = self.carPos
 
@@ -50,17 +53,21 @@ class car_control:
             self.last_detected = time.time()
             self.sign_type = -1
 
-        # print("STRAIGHT")
-        # Can't detect lane
-        # if (dist * sign[4]) > 8000:
-        #     self.is_turning = True
-        if middlePos_x == -1 or self.is_turning:
-            if diff < 2:
-                self.is_turning = True
+        if (diff > 0.3 and diff < 0.5):
+            self.is_turning = True
+
+        if self.is_turning:
+            if diff < 1.5:
                 steerAngle = 50 * self.sign_type
             else:
-                self.is_turning = False
-                steerAngle = 0
+                if middlePos_x == -1:
+                    self.last_detected = time.time() - 1.5
+                    steerAngle = 50 * self.sign_type
+                else:
+                    self.is_turning = False
+                    steerAngle = 0
+        elif middlePos_x == -1:
+            steerAngle = 0
         else:
             # Distance between MiddlePos and CarPos
             distance_x = middlePos_x - carPos_x
@@ -71,6 +78,4 @@ class car_control:
             # print(middlePos_x, steerAngle)
 
         return steerAngle
-
-
 

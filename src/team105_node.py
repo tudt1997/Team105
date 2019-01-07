@@ -27,6 +27,7 @@ class image_converter:
         self.cc = car_control(TEAM_NAME)
         self.ld = lane_detector()
         rospy.Rate(10)
+        self.is_turning = False
 
     def callback(self, data):
         # print("callback")
@@ -40,14 +41,14 @@ class image_converter:
             # cv2.waitKey(1)
 
             # image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
-            out_img, middlePos = self.ld.lane_detect(out_img)
+            out_img, middlePos = self.ld.lane_detect(out_img, self.is_turning)
             # print(middlePos)
             # print("Left ",left_fit," Right ",right_fit)
             cv2.imshow("Middle Pos", out_img)
             cv2.waitKey(1)
 
             # drive
-            self.cc.control(sign, (middlePos[0], middlePos[2]))
+            is_turning = self.cc.control(sign, (middlePos[0], middlePos[2]))
 
         except CvBridgeError as e:
             print(e)
