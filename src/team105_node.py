@@ -16,15 +16,15 @@ from sign_classi import predict
 from lane_detector import lane_detector
 from car_control import car_control
 
-TEAM_NUMBER = '105'
+TEAM_NAME = 'Team1'
 
 
 class image_converter:
     def __init__(self):
         self.bridge = CvBridge()
-        self.image_sub = rospy.Subscriber("team" + TEAM_NUMBER + "_image/compressed", CompressedImage,
+        self.image_sub = rospy.Subscriber(TEAM_NAME + "_image/compressed", CompressedImage,
                                           callback=self.callback, queue_size=1)
-        self.cc = car_control(TEAM_NUMBER)
+        self.cc = car_control(TEAM_NAME)
         self.ld = lane_detector()
         rospy.Rate(10)
 
@@ -34,20 +34,20 @@ class image_converter:
             np_arr = np.fromstring(data.data, np.uint8)
             image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
             # NOTE: image_np.shape = (240,320,3)
-            out_img, sign_x, sign_y, sign_size = detect_sign(image_np)
+            out_img, sign = detect_sign(image_np)
             # sign_size = 0
             # cv2.imshow("Image window", img)
             # cv2.waitKey(1)
 
             # image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
             out_img, middlePos = self.ld.lane_detect(out_img)
-            print(middlePos)
+            # print(middlePos)
             # print("Left ",left_fit," Right ",right_fit)
             cv2.imshow("Middle Pos", out_img)
             cv2.waitKey(1)
 
             # drive
-            self.cc.control(sign_size, (middlePos[0], middlePos[2]))
+            self.cc.control(sign, (middlePos[0], middlePos[2]))
 
         except CvBridgeError as e:
             print(e)

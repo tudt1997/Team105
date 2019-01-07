@@ -6,57 +6,69 @@ import time
 from time import sleep
 
 class car_control:
-    def __init__(self, team_number):
+    def __init__(self, team_name):
         rospy.init_node('team105', anonymous=True)
-        self.speed_pub = rospy.Publisher("team"+team_number+"_speed", Float32, queue_size=1)
-        self.steerAngle_pub = rospy.Publisher("team"+team_number+"_steerAngle", Float32, queue_size=1)
+        self.speed_pub = rospy.Publisher(team_name + "_speed", Float32, queue_size=1)
+        self.steerAngle_pub = rospy.Publisher(team_name + "_steerAngle", Float32, queue_size=1)
         rospy.Rate(10)
+
+        self.carPos = (160, 240)
         self.last_detected = 0
         self.sign_type = 0
+        self.is_turning = False
 
-    def control(self, signWidth, middlePos):
+    def control(self, sign, middlePos):
         if not rospy.is_shutdown():
-            steerAngle = self.cal_steerAngle(signWidth, middlePos)
+            now = time.time()
+            diff = now - self.last_detected
+
+            steerAngle = self.cal_steerAngle(sign, middlePos, diff)
             print(steerAngle)
-            if math.fabs(steerAngle) >= 7 or signWidth > 35 or signWidth < -35:
-                self.speed_pub.publish(15)
-            else:
-                self.speed_pub.publish(35)
 
-    def cal_steerAngle(self, signWidth, middlePos):
-        carPos_x = 160
-        carPos_y = 240
+            speed = 50
+            # cant detect 2 lanes
+            if (middlePos[0] == -1 or math.fabs(steerAngle) >= 10) and diff > 2:
+                speed = 30
+            elif math.fabs(steerAngle) >= 5 or (diff > 0.1 and diff < 2):
+                speed = 40
 
-        middlePos_x = middlePos[0]
-        middlePos_y = middlePos[1]
+            # print(middlePos[0])
+            self.speed_pub.publish(speed)
+            self.steerAngle_pub.publish(steerAngle)
+
+    def cal_steerAngle(self, sign, middlePos, diff):
+        carPos_x, carPos_y = self.carPos
+
+        middlePos_x, middlePos_y = middlePos
 
         steerAngle = 0
-        now = time.time()
-        if (signWidth > 30):
+
+        if (sign[4] > 30):
             self.last_detected = time.time()
             self.sign_type = 1
-        if (signWidth < -30):
+        if (sign[4] < -30):
             self.last_detected = time.time()
             self.sign_type = -1
 
-        diff = now - self.last_detected
-        if (diff > 0.8 and diff < 2.6):
-            steerAngle = 25 * self.sign_type
-            self.steerAngle_pub.publish(steerAngle)
-        else:
-            # print("STRAIGHT")
-            # Can't detect lane
-            if middlePos_x == -1:
-                steerAngle = 0
+        # print("STRAIGHT")
+        # Can't detect lane
+        # if (dist * sign[4]) > 8000:
+        #     self.is_turning = True
+        if middlePos_x == -1 or self.is_turning:
+            if diff < 2:
+                self.is_turning = True
+                steerAngle = 50 * self.sign_type
             else:
-                # Distance between MiddlePos and CarPos
-                distance_x = middlePos_x - carPos_x
-                distance_y = carPos_y - middlePos_y
+                self.is_turning = False
+                steerAngle = 0
+        else:
+            # Distance between MiddlePos and CarPos
+            distance_x = middlePos_x - carPos_x
+            distance_y = carPos_y - middlePos_y
 
-                # Angle to middle position
-                steerAngle = math.atan(distance_x / distance_y) * 180 / math.pi
-                # print(middlePos_x, steerAngle)
-            self.steerAngle_pub.publish(steerAngle)
+            # Angle to middle position
+            steerAngle = math.atan(distance_x / distance_y) * 180 / math.pi
+            # print(middlePos_x, steerAngle)
 
         return steerAngle
 
