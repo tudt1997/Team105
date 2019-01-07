@@ -9,14 +9,15 @@ class lane_detector:
 
     # return the smaller
     def cal_quadratic_smaller(self, a, b, c):
-        delta = b**2 - 4*a*c
+        delta = b**2. - 4.*a*c
         if delta < 0 or a == 0:
+            print("delta",delta)
             return float('inf')
         else:
-            y1 = (-b - math.sqrt(delta))/(2*a)
-            y2 = (-b + math.sqrt(delta))/(2*a)
+            y1 = (-b - math.sqrt(delta))/(2.*a)
+            y2 = (-b + math.sqrt(delta))/(2.*a)
 
-            if 0<=y1 <= 240:
+            if 0 <= y1 <= 240:
                 return y1
             return y2
 
@@ -69,14 +70,17 @@ class lane_detector:
 
     def restrict_similar_function(self, left_fit, right_fit, left_lane_inds, right_lane_inds):
         # restrict wrong detection
-        left_check = self.cal_quadratic_smaller(left_fit[0], left_fit[1], left_fit[2] - 160)
-        right_check = self.cal_quadratic_smaller(right_fit[0], right_fit[1], right_fit[2] - 160)
+        left_check = self.cal_quadratic_smaller(left_fit[0], left_fit[1], left_fit[2] - 159.5)
+        right_check = self.cal_quadratic_smaller(right_fit[0], right_fit[1], right_fit[2] - 159.5)
+
+        # print("left_y", left_check)
+        # print("right_y", right_check)
 
         checksum = float('inf')
         if (left_check != float('inf') and right_check != float('inf')):
             checksum = math.fabs(left_check - right_check)
 
-        print(checksum)
+        # print("checksum_full" , checksum)
         # 2 lanes have similar function
         if (checksum <= 100):
             print("checksum", checksum)
@@ -86,13 +90,13 @@ class lane_detector:
 
             if min_nonzero_left_y > min_nonzero_right_y:
                 right_fit = [0, 0, 0]
-                right_lane_inds = np.zeros_like(right_lane_inds)
-                print("remove right")
+                right_lane_inds = []
+                # print("remove right")
 
             else:
                 left_fit = [0, 0, 0]
-                left_lane_inds = np.zeros_like(left_lane_inds)
-                print("remove left")
+                left_lane_inds = []
+                # print("remove left")
 
         return left_fit, right_fit, left_lane_inds, right_lane_inds, checksum
 
@@ -155,6 +159,12 @@ class lane_detector:
         # Concatenate the arrays of indices
         left_lane_inds = np.concatenate(left_lane_inds)
         right_lane_inds = np.concatenate(right_lane_inds)
+
+        # must have >= 3 pixels to fit polynomial
+        if len(left_lane_inds) < 100:
+            left_lane_inds = []
+        if len(right_lane_inds) < 100:
+            right_lane_inds = []
 
         # Extract left and right line pixel positions
         leftx = nonzerox[left_lane_inds]
@@ -268,6 +278,7 @@ class lane_detector:
         left_fit, right_fit, \
         left_lane_inds, right_lane_inds, checksum = self.restrict_similar_function(left_fit, right_fit, left_lane_inds, right_lane_inds)
 
+        print(left_fit, right_fit)
         rectangles = visualization_data[0]
 
         middlePos = self.find_middlePos(left_fit, right_fit, checksum)
@@ -314,3 +325,4 @@ class lane_detector:
         cv2.waitKey(1)
 
         return out_img, middlePos
+
