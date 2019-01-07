@@ -16,7 +16,7 @@ from sign_classi import predict
 from lane_detector import lane_detector
 from car_control import car_control
 
-TEAM_NAME = 'Team1'
+TEAM_NAME = 'team105'
 
 
 class image_converter:
