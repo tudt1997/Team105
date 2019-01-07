@@ -160,10 +160,10 @@ class lane_detector:
         left_lane_inds = np.concatenate(left_lane_inds)
         right_lane_inds = np.concatenate(right_lane_inds)
 
-        # must have >= 3 pixels to fit polynomial
-        if len(left_lane_inds) < 100:
+        # must have >= 150 pixels to fit polynomial
+        if len(left_lane_inds) < 150:
             left_lane_inds = []
-        if len(right_lane_inds) < 100:
+        if len(right_lane_inds) < 150:
             right_lane_inds = []
 
         # Extract left and right line pixel positions
