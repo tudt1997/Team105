@@ -1,10 +1,24 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 class lane_detector:
     def __init__(self):
         self.laneWidth = 0
+
+    # return the smaller
+    def cal_quadratic_smaller(self, a, b, c):
+        delta = b**2 - 4*a*c
+        if delta < 0 or a == 0:
+            return float('inf')
+        else:
+            y1 = (-b - math.sqrt(delta))/(2*a)
+            y2 = (-b + math.sqrt(delta))/(2*a)
+
+            if 0<=y1 <= 240:
+                return y1
+            return y2
 
     # transform to bird-view
     def unwarp(self, img, src, dst):
@@ -52,6 +66,37 @@ class lane_detector:
 
         return bin_out
 
+
+    def restrict_similar_function(self, left_fit, right_fit, left_lane_inds, right_lane_inds):
+        # restrict wrong detection
+        left_check = self.cal_quadratic_smaller(left_fit[0], left_fit[1], left_fit[2] - 160)
+        right_check = self.cal_quadratic_smaller(right_fit[0], right_fit[1], right_fit[2] - 160)
+
+        checksum = float('inf')
+        if (left_check != float('inf') and right_check != float('inf')):
+            checksum = math.fabs(left_check - right_check)
+
+        print(checksum)
+        # 2 lanes have similar function
+        if (checksum <= 100):
+            print("checksum", checksum)
+
+            min_nonzero_left_y = left_lane_inds[0]
+            min_nonzero_right_y = right_lane_inds[0]
+
+            if min_nonzero_left_y > min_nonzero_right_y:
+                right_fit = [0, 0, 0]
+                right_lane_inds = np.zeros_like(right_lane_inds)
+                print("remove right")
+
+            else:
+                left_fit = [0, 0, 0]
+                left_lane_inds = np.zeros_like(left_lane_inds)
+                print("remove left")
+
+        return left_fit, right_fit, left_lane_inds, right_lane_inds, checksum
+
+
     def sliding_window_polyfit(self, img):
         # Take a histogram of the bottom half of the image
         histogram = np.sum(img, axis=0)
@@ -74,7 +119,7 @@ class lane_detector:
         leftx_current = leftx_base
         rightx_current = rightx_base
         # Set the width of the windows +/- margin
-        margin = 10
+        margin = 20
         # Set minimum number of pixels found to recenter window
         minpix = 20
         # Create empty lists to receive left and right lane pixel indices
@@ -128,10 +173,11 @@ class lane_detector:
 
         visualization_data = (rectangle_data, histogram)
 
+
         return left_fit, right_fit, left_lane_inds, right_lane_inds, visualization_data
 
 
-    def find_middlePos(self, left_fit, right_fit):
+    def find_middlePos(self, left_fit, right_fit, checksum):
         # middlePos_y = 120
         # middlePos_y2 = 240
 
@@ -156,7 +202,8 @@ class lane_detector:
             leftSide_x = left_fit[0] * middlePos_y ** 2 + left_fit[1] * middlePos_y + left_fit[2]
             rightSide_x = right_fit[0] * middlePos_y ** 2 + right_fit[1] * middlePos_y + right_fit[2]
 
-            self.laneWidth = rightSide_x[0] - leftSide_x[0]
+            if(checksum > 100):
+                self.laneWidth = rightSide_x[0] - leftSide_x[0]
 
             # print("WIDTH ", rightSide_x - leftSide_x)
             middlePos_x = (leftSide_x + rightSide_x) / 2
@@ -215,11 +262,15 @@ class lane_detector:
         # cv2.imshow("Lines only", bin_line_only*255)
         # cv2.waitKey(1)
 
-        left_fit, right_fit, left_lane_inds, right_lane_inds, visualization_data = self.sliding_window_polyfit(bin_line_only)
+        left_fit, right_fit, left_lane_inds, right_lane_inds, \
+        visualization_data = self.sliding_window_polyfit(bin_line_only)
+
+        left_fit, right_fit, \
+        left_lane_inds, right_lane_inds, checksum = self.restrict_similar_function(left_fit, right_fit, left_lane_inds, right_lane_inds)
 
         rectangles = visualization_data[0]
 
-        middlePos = self.find_middlePos(left_fit, right_fit)
+        middlePos = self.find_middlePos(left_fit, right_fit, checksum)
         # print(middlePos)
 
         # draw middle line
@@ -231,35 +282,35 @@ class lane_detector:
 
 
         # Create an output image to draw on and  visualize the result
-        # lane_img = np.uint8(np.dstack((bin_line_only, bin_line_only, bin_line_only)) * 255)
-        #
-        # try:
-        #     # Generate x and y values for plotting
-        #     ploty = np.linspace(0, bin_line_only.shape[0] - 1, bin_line_only.shape[0]//2)
-        #     left_fitx = left_fit[0] * ploty ** 2 + left_fit[1] * ploty + left_fit[2]
-        #     right_fitx = right_fit[0] * ploty ** 2 + right_fit[1] * ploty + right_fit[2]
-        #
-        #     pts1 = np.vstack((left_fitx, ploty)).astype(np.int32).T
-        #     pts2 = np.vstack((right_fitx, ploty)).astype(np.int32).T
-        #     # Plot
-        #     cv2.polylines(lane_img, [pts1], False, (0,255,255), 1)
-        #     cv2.polylines(lane_img, [pts2], False, (0,255,255), 1)
-        # except:
-        #     pass
-        # # Draw the windows on the visualization image
-        # for rect in rectangles:
-        #     cv2.rectangle(lane_img, (rect[2], rect[0]), (rect[3], rect[1]), (0, 255, 0), 2)
-        #     cv2.rectangle(lane_img, (rect[4], rect[0]), (rect[5], rect[1]), (0, 255, 0), 2)
-        #
-        # # Identify the x and y positions of all nonzero pixels in the image
-        # nonzero = bin_line_only.nonzero()
-        # nonzeroy = np.array(nonzero[0])
-        # nonzerox = np.array(nonzero[1])
-        # # Change color of nonzero pixels
-        # lane_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
-        # lane_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
+        lane_img = np.uint8(np.dstack((bin_line_only, bin_line_only, bin_line_only)) * 255)
 
-        # cv2.imshow("Detect lane", lane_img)
-        # cv2.waitKey(1)
+        try:
+            # Generate x and y values for plotting
+            ploty = np.linspace(0, bin_line_only.shape[0] - 1, bin_line_only.shape[0]//2)
+            left_fitx = left_fit[0] * ploty ** 2 + left_fit[1] * ploty + left_fit[2]
+            right_fitx = right_fit[0] * ploty ** 2 + right_fit[1] * ploty + right_fit[2]
+
+            pts1 = np.vstack((left_fitx, ploty)).astype(np.int32).T
+            pts2 = np.vstack((right_fitx, ploty)).astype(np.int32).T
+            # Plot
+            cv2.polylines(lane_img, [pts1], False, (0,255,255), 1)
+            cv2.polylines(lane_img, [pts2], False, (0,255,255), 1)
+        except:
+            pass
+        # Draw the windows on the visualization image
+        for rect in rectangles:
+            cv2.rectangle(lane_img, (rect[2], rect[0]), (rect[3], rect[1]), (0, 255, 0), 2)
+            cv2.rectangle(lane_img, (rect[4], rect[0]), (rect[5], rect[1]), (0, 255, 0), 2)
+
+        # Identify the x and y positions of all nonzero pixels in the image
+        nonzero = bin_line_only.nonzero()
+        nonzeroy = np.array(nonzero[0])
+        nonzerox = np.array(nonzero[1])
+        # Change color of nonzero pixels
+        lane_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
+        lane_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
+
+        cv2.imshow("Detect lane", lane_img)
+        cv2.waitKey(1)
 
         return out_img, middlePos
