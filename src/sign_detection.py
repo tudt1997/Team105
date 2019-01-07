@@ -43,5 +43,7 @@ def detect_sign(image_np):
                     cv2.putText(img, 'Turn left', (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
                     sign_size = -w
                 break
+            # else:
+            #     cv2.putText(img, 'Not', (x, y), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1, cv2.LINE_AA)
 
-    return img, (sign_x, sign_y, sign_h, sign_w, sign_size)
+    return img, (sign_x, sign_y, sign_w, sign_h, sign_size)

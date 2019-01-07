@@ -74,7 +74,7 @@ class lane_detector:
         leftx_current = leftx_base
         rightx_current = rightx_base
         # Set the width of the windows +/- margin
-        margin = 10
+        margin = 20
         # Set minimum number of pixels found to recenter window
         minpix = 20
         # Create empty lists to receive left and right lane pixel indices

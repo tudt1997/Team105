@@ -23,13 +23,13 @@ class car_control:
             diff = now - self.last_detected
 
             steerAngle = self.cal_steerAngle(sign, middlePos, diff)
-            print(steerAngle)
+            # print(steerAngle)
 
             speed = 50
             # cant detect 2 lanes
             if (middlePos[0] == -1 or math.fabs(steerAngle) >= 10) and diff > 2:
                 speed = 30
-            elif math.fabs(steerAngle) >= 5 or (diff > 0.1 and diff < 2):
+            elif math.fabs(steerAngle) >= 5 or (sign[4] > 30 and diff < 2):
                 speed = 40
 
             # print(middlePos[0])
@@ -54,13 +54,21 @@ class car_control:
         # Can't detect lane
         # if (dist * sign[4]) > 8000:
         #     self.is_turning = True
-        if middlePos_x == -1 or self.is_turning:
+        if (diff > 0.3 and diff < 0.5):
+            self.is_turning = True
+
+        if self.is_turning:
             if diff < 2:
-                self.is_turning = True
                 steerAngle = 50 * self.sign_type
             else:
-                self.is_turning = False
-                steerAngle = 0
+                if middlePos_x == -1:
+                    self.last_detected = time.time() - 1.5
+                    steerAngle = 50 * self.sign_type
+                else:
+                    self.is_turning = False
+                    steerAngle = 0
+        elif middlePos_x == -1:
+            steerAngle = 0
         else:
             # Distance between MiddlePos and CarPos
             distance_x = middlePos_x - carPos_x
