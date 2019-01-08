@@ -292,34 +292,34 @@ class lane_detector:
         out_img = self.warp(source_img, line_img, dst, src)
 
 
-        # Create an output image to draw on and  visualize the result
-        lane_img = np.uint8(np.dstack((bin_line_only, bin_line_only, bin_line_only)) * 255)
+#         # Create an output image to draw on and  visualize the result
+#         lane_img = np.uint8(np.dstack((bin_line_only, bin_line_only, bin_line_only)) * 255)
 
-        try:
-            # Generate x and y values for plotting
-            ploty = np.linspace(0, bin_line_only.shape[0] - 1, bin_line_only.shape[0]//2)
-            left_fitx = left_fit[0] * ploty ** 2 + left_fit[1] * ploty + left_fit[2]
-            right_fitx = right_fit[0] * ploty ** 2 + right_fit[1] * ploty + right_fit[2]
+#         try:
+#             # Generate x and y values for plotting
+#             ploty = np.linspace(0, bin_line_only.shape[0] - 1, bin_line_only.shape[0]//2)
+#             left_fitx = left_fit[0] * ploty ** 2 + left_fit[1] * ploty + left_fit[2]
+#             right_fitx = right_fit[0] * ploty ** 2 + right_fit[1] * ploty + right_fit[2]
 
-            pts1 = np.vstack((left_fitx, ploty)).astype(np.int32).T
-            pts2 = np.vstack((right_fitx, ploty)).astype(np.int32).T
-            # Plot
-            cv2.polylines(lane_img, [pts1], False, (0,255,255), 1)
-            cv2.polylines(lane_img, [pts2], False, (0,255,255), 1)
-        except:
-            pass
-        # Draw the windows on the visualization image
-        for rect in rectangles:
-            cv2.rectangle(lane_img, (rect[2], rect[0]), (rect[3], rect[1]), (0, 255, 0), 2)
-            cv2.rectangle(lane_img, (rect[4], rect[0]), (rect[5], rect[1]), (0, 255, 0), 2)
+#             pts1 = np.vstack((left_fitx, ploty)).astype(np.int32).T
+#             pts2 = np.vstack((right_fitx, ploty)).astype(np.int32).T
+#             # Plot
+#             cv2.polylines(lane_img, [pts1], False, (0,255,255), 1)
+#             cv2.polylines(lane_img, [pts2], False, (0,255,255), 1)
+#         except:
+#             pass
+#         # Draw the windows on the visualization image
+#         for rect in rectangles:
+#             cv2.rectangle(lane_img, (rect[2], rect[0]), (rect[3], rect[1]), (0, 255, 0), 2)
+#             cv2.rectangle(lane_img, (rect[4], rect[0]), (rect[5], rect[1]), (0, 255, 0), 2)
 
-        # Identify the x and y positions of all nonzero pixels in the image
-        nonzero = bin_line_only.nonzero()
-        nonzeroy = np.array(nonzero[0])
-        nonzerox = np.array(nonzero[1])
-        # Change color of nonzero pixels
-        lane_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
-        lane_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
+#         # Identify the x and y positions of all nonzero pixels in the image
+#         nonzero = bin_line_only.nonzero()
+#         nonzeroy = np.array(nonzero[0])
+#         nonzerox = np.array(nonzero[1])
+#         # Change color of nonzero pixels
+#         lane_img[nonzeroy[left_lane_inds], nonzerox[left_lane_inds]] = [255, 0, 0]
+#         lane_img[nonzeroy[right_lane_inds], nonzerox[right_lane_inds]] = [0, 0, 255]
 
         # cv2.imshow("Detect lane", lane_img)
         # cv2.waitKey(1)
