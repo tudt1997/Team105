@@ -45,7 +45,7 @@ def predict(img):
 
 
 	# load our input image and grab its spatial dimensions
-	#image = img[:, :]
+	image = img
 	#image= cv2.reSize(img,(newsize,newsize))
 	(H, W) = image.shape[:2]
 
