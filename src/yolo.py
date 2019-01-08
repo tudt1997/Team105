@@ -40,12 +40,12 @@ configPath =path+ "/cds/cds.cfg"
 		# print("[INFO] loading YOLO from disk...")
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 net.setPreferableTarget(0)
-def predict(img, newsize=32):
+def predict(img):
 
 
 
 	# load our input image and grab its spatial dimensions
-	image = img
+	#image = img[:, :]
 	#image= cv2.reSize(img,(newsize,newsize))
 	(H, W) = image.shape[:2]
 
@@ -129,11 +129,12 @@ def predict(img, newsize=32):
 			text = "{}: {:.4f}".format(LABELS[classIDs[i]], confidences[i])
 			cv2.putText(image, text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX,
 						0.5, color, 2)
-	cv2.imshow("Image", image)
+	#cv2.imshow("Image", image)
 	if classIDs:
 		return classIDs[0]
 	else:
 		return 3
+	return image
 # show the output image
 
 # cv2.waitKey(0)

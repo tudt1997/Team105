@@ -16,6 +16,7 @@ from sign_classi import predict
 from lane_detector import lane_detector
 from car_control import car_control
 from object_detection import detect_object
+from yolo import predict
 TEAM_NAME = 'team105'
 
 
@@ -45,8 +46,8 @@ class image_converter:
             out_img, middlePos = self.ld.lane_detect(out_img, self.is_turning)
             # print(middlePos)
             # print("Left ",left_fit," Right ",right_fit)
-
-            cv2.imshow("Middle Pos", out_img)
+            final_img = predict(out_img)
+            cv2.imshow("Middle Pos", final_img)
             #img_object = detect_object(out_img)
             #cv2.imshow("Detect Object", img_object)
             cv2.waitKey(1)
