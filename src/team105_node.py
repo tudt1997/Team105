@@ -27,7 +27,7 @@ class image_converter:
                                           callback=self.callback, queue_size=1)
         self.cc = car_control(TEAM_NAME)
         self.ld = lane_detector()
-        self.curr_time = ""
+        self.curr_time = "100"
         rospy.Rate(10)
         self.is_turning = False
 
