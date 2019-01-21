@@ -54,7 +54,7 @@ class image_converter:
             cv2.waitKey(1)
 
             # drive
-            is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
+            self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
             milliseconds = int(round(time.time() * 1000))
             
             if int(self.curr_time) <= milliseconds:
