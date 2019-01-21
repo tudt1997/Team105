@@ -36,7 +36,7 @@ class car_control:
             self.speed_pub.publish(speed)
             self.steerAngle_pub.publish(steerAngle)
 
-        return self.is_turning, steerAngle
+        return self.is_turning, steerAngle, speed
 
 
     def cal_steerAngle(self, sign, middlePos, diff):
