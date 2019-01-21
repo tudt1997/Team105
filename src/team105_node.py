@@ -58,7 +58,7 @@ class image_converter:
             milliseconds = int(round(time.time() * 1000))
             
             if int(self.curr_time) <= milliseconds:
-                file_name = "../CDS/" + self.curr_time + "-"+ str(steer_angle)+"-" +"-"+ str(speed)+ ".jpg"
+                file_name = "../CDS/" + self.curr_time + "-"+ str(steer_angle)+"-"+ str(speed)+ ".jpg"
                 self.curr_time = str(milliseconds+300)
                 cv2.imwrite(file_name, image_np)
 
