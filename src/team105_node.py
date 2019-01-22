@@ -44,6 +44,8 @@ class image_converter:
             #cv2.waitKey(1)
 
             # image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
+            if self.is_turning == True:
+                print(self.is_turning)
             out_img, middlePos = self.ld.lane_detect(out_img, self.is_turning)
             # print(middlePos)
             # print("Left ",left_fit," Right ",right_fit)
