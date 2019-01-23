@@ -15,8 +15,7 @@ from sign_detection import detect_sign
 from sign_classi import predict
 from lane_detector import lane_detector
 from car_control import car_control
-from object_detection import detect_object
-import time
+
 TEAM_NAME = 'team105'
 
 
@@ -27,7 +26,6 @@ class image_converter:
                                           callback=self.callback, queue_size=1)
         self.cc = car_control(TEAM_NAME)
         self.ld = lane_detector()
-        self.curr_time = "100"
         rospy.Rate(10)
         self.is_turning = False
 
@@ -37,35 +35,24 @@ class image_converter:
             np_arr = np.fromstring(data.data, np.uint8)
             image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
             # NOTE: image_np.shape = (240,320,3)
-
             out_img, sign = detect_sign(image_np)
             # sign_size = 0
-            #cv2.imshow("Object", img_object)
-            #cv2.waitKey(1)
+            # cv2.imshow("Image window", img)
+            # cv2.waitKey(1)
 
             # image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
-            if self.is_turning == True:
-                print(self.is_turning)
             out_img, middlePos = self.ld.lane_detect(out_img, self.is_turning)
             # print(middlePos)
             # print("Left ",left_fit," Right ",right_fit)
-
             cv2.imshow("Middle Pos", out_img)
-            #img_object = detect_object(out_img)
-            #cv2.imshow("Detect Object", img_object)
             cv2.waitKey(1)
 
             # drive
-            self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
-            milliseconds = int(round(time.time() * 1000))
-            
-            if int(self.curr_time) <= milliseconds:
-                file_name = "../CDS/" + self.curr_time + "_"+ str(steer_angle)+"_"+ str(speed)+ ".jpg"
-                self.curr_time = str(milliseconds+300)
-                cv2.imwrite(file_name, image_np)
+            is_turning = self.cc.control(sign, (middlePos[0], middlePos[2]))
 
         except CvBridgeError as e:
             print(e)
+
 
 if __name__ == '__main__':
     rospy.init_node('team105', anonymous=True)
