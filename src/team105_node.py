@@ -17,6 +17,7 @@ from lane_detector import lane_detector
 from car_control import car_control
 from object_detection import detect_object
 from time import gmtime, strftime
+import time
 TEAM_NAME = 'team105'
 
 
@@ -53,10 +54,12 @@ class image_converter:
             cv2.waitKey(1)
 
             # drive
-            is_turning,steer_angle = self.cc.control(sign, (middlePos[0], middlePos[2]))
-            file_name = "/home/kinginthenet/Documents/CDS/" + strftime("%Y-%m-%d %H:%M:%S") + "-"+ str(steer_angle)+"-" + ".jpg"
-            cv2.imwrite(file_name, image_np)
+            current_milli_time = int(round(time.time() * 1000))
 
+
+            self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
+            file_name = "/home/kinginthenet/Downloads/Data/CDS/" + str(current_milli_time) + "_" + str(steer_angle) + "_" + str(speed) + "_" + str(middlePos[0]) + ".jpg"
+            cv2.imwrite(file_name, image_np)
         except CvBridgeError as e:
             print(e)
 
