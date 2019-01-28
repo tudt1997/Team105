@@ -54,12 +54,8 @@ class image_converter:
             cv2.waitKey(1)
 
             # drive
-<<<<<<< HEAD
             current_milli_time = int(round(time.time() * 1000))
 
-=======
-            is_turning = self.cc.control(sign, (middlePos[0], middlePos[2]))
->>>>>>> f30d20dd586631234018ed2dfbb4e8e255c7c10f
 
             self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
             file_name = "/home/kinginthenet/Downloads/Data/CDS/" + str(current_milli_time) + "_" + str(steer_angle) + "_" + str(speed) + "_" + str(middlePos[0]) + ".jpg"
