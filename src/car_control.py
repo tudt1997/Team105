@@ -49,11 +49,15 @@ class car_control:
         if (sign[4] > 20):
             self.last_detected = time.time()
             self.sign_type = 1
+<<<<<<< HEAD
         if (sign[4] < -25):
+=======
+        if (sign[4] < -20):
+>>>>>>> f30d20dd586631234018ed2dfbb4e8e255c7c10f
             self.last_detected = time.time()
             self.sign_type = -1
 
-        if (diff > 0.3 and diff < 0.5):
+        if (diff > 0.35 and diff < 0.5):
             self.is_turning = True
 
         if self.is_turning:
