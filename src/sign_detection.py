@@ -4,7 +4,7 @@ from sign_classi import predict
 
 
 def detect_sign(image_np):
-    img = image_np[:, :]
+    img = np.array(image_np[:, :],copy=True)
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
     lower_red = cv2.inRange(hsv, (0, 100, 100), (20, 255, 255))

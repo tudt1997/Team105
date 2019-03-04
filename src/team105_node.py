@@ -29,6 +29,7 @@ class image_converter:
         self.ld = lane_detector()
         self.curr_time = "100"
         rospy.Rate(10)
+        self.i = 0
         self.is_turning = False
 
     def callback(self, data):
@@ -54,13 +55,17 @@ class image_converter:
             cv2.waitKey(1)
 
             # drive
-            self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]))
-            milliseconds = int(round(time.time() * 1000))
-            
-            if int(self.curr_time) <= milliseconds:
-                file_name = "/home/nda97531/catkin_ws/src/team105/CDS/" + self.curr_time + "_"+ str(steer_angle)+"_"+ str(speed)+ ".jpg"
-                self.curr_time = str(milliseconds+300)
-                cv2.imwrite(file_name, image_np)
+            if self.i == 4:
+                self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]), image_np)
+                self.i = 0
+            else:
+                self.i += 1
+            # milliseconds = int(round(time.time() * 1000))
+            #
+            # if int(self.curr_time) <= milliseconds:
+            #     file_name = "/home/nda97531/catkin_ws/src/team105/CDS/" + self.curr_time + "_"+ str(steer_angle)+"_"+ str(speed)+ ".jpg"
+            #     self.curr_time = str(milliseconds+300)
+            #     cv2.imwrite(file_name, image_np)
 
         except CvBridgeError as e:
             print(e)
