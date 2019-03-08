@@ -61,5 +61,5 @@ def nvidia_model():
     # Output layer
     model.add(Dense(1))
     
-    model.compile(loss = "mean_squared_error", optimizer = Adam(lr = 0.001))
+    # model.compile(loss = "mean_squared_error", optimizer = Adam(lr = 0.001))
     return model

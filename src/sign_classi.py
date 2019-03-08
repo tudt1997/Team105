@@ -3,9 +3,6 @@ import cv2
 import numpy as np
 import rospkg
 
-path = rospkg.RosPack().get_path('team105')
-
-device = tr.device("cuda:0" if tr.cuda.is_available() else "cpu")
 
 class CNN32(tr.nn.Module):
     def __init__(self):
@@ -38,30 +35,35 @@ class CNN32(tr.nn.Module):
         X = tr.nn.functional.softmax(self.fc3(X), dim=1)
         return X
 
-net= CNN32().to(device)
-net.load_state_dict(tr.load(path + '/param/sign_classi_param_9932_half', map_location=device))
+class Net:
+    def __init__(self):
+        path = rospkg.RosPack().get_path('team105')
 
-def predict(img, new_size=32):
-    img = np.array(img, dtype= np.float32) / 255.
-    img = cv2.resize(img, (new_size, new_size))
+        self.device = tr.device("cuda:0" if tr.cuda.is_available() else "cpu")
+        self.net = CNN32().to(self.device)
+        self.net.load_state_dict(tr.load(path + '/param/sign_classi_param_9932_half', map_location=self.device))
 
-    img= img.reshape(1,new_size,new_size,3).transpose((0,3,1,2))
+    def predict(self, img, new_size=32):
+        img = np.array(img, dtype= np.float32) / 255.
+        img = cv2.resize(img, (new_size, new_size))
 
-    with tr.no_grad():
-        img = tr.from_numpy(img).to(device)
-        output= net(img)
-        output= tr.argmax(output)
+        img= img.reshape(1,new_size,new_size,3).transpose((0,3,1,2))
 
-    return int(output) #0= not turn; 1= turn right, 2= turn left
+        with tr.no_grad():
+            img = tr.from_numpy(img).to(self.device)
+            output = self.net(img)
+            output = tr.argmax(output)
 
-# with tr.no_grad():
-#     # while True:
-#     #     dir= raw_input("file directory: ")
-#     #     if dir == '': break
-#     for i in range(24,28):
-#         dir= 'other imgs/o27.png'#'other imgs/o' + str(i) + '.png'
-#
-#         img= cv2.imread(dir)
-#         img= np.flip(img,1)
-#         cv2.imshow(str(predict(img)), cv2.resize(img, (150,150)))
-#         cv2.waitKey(0)
+        return int(output) #0= not turn; 1= turn right, 2= turn left
+
+    # with tr.no_grad():
+    #     # while True:
+    #     #     dir= raw_input("file directory: ")
+    #     #     if dir == '': break
+    #     for i in range(24,28):
+    #         dir= 'other imgs/o27.png'#'other imgs/o' + str(i) + '.png'
+    #
+    #         img= cv2.imread(dir)
+    #         img= np.flip(img,1)
+    #         cv2.imshow(str(predict(img)), cv2.resize(img, (150,150)))
+    #         cv2.waitKey(0)

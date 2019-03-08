@@ -4,16 +4,14 @@ import glob
 from model_keras import nvidia_model
 from augmentation import read_img
 import rospkg
-import rospy
 
-if __name__ == '__main__':
-    rospy.init_node('team105', anonymous=True)
+
+def test():
     path = rospkg.RosPack().get_path('team105')
 
     model = nvidia_model()
     model.load_weights(path + '/param/new-weights.03-0.36097.h5')
     model._make_predict_function()
-
 
     for img_path in glob.glob(path + '/test/*.jpg'):
         test_img = read_img(img_path)

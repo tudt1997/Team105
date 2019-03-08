@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import rospy
 from std_msgs.msg import Float32
 import cv2
@@ -11,7 +13,6 @@ from PIL import Image
 import rospkg
 import cv2
 import numpy as np
-from keras.models import load_model
 from model_keras import nvidia_model
 path = rospkg.RosPack().get_path('team105')
 from augmentation import read_img
@@ -46,9 +47,9 @@ class car_control:
         self.i = 0
         # Load keras model
         self.model = nvidia_model()
-        self.model.load_weights(path + '/param/new-weights.03-0.36097.h5')
+        self.model.load_weights(path + '/param/cds-weights.09-0.02990.h5')
         self.model._make_predict_function()
-        self.test(self.model)
+        # self.test(self.model)
         # checkpoint = torch.load(path + '/param/model3.h5', map_location=lambda storage, loc: storage)
         # self.net = checkpoint['net'].to(device)
         self.carPos = (160, 240)
@@ -125,7 +126,7 @@ class car_control:
 
             # middle_pos = self.net(img).view(-1).data.cpu().numpy()[0] * 320
             # middle_pos = float(self.model.predict(img_array[None, :, :, :], batch_size=1)) * 80 + 160
-            middle_pos = float(self.model.predict(np.expand_dims(img_array, axis=0), batch_size=1)) * 80 + 160
+            middle_pos = float(self.model.predict(self.bird_view(img_array)[None, :, :, :], axis=0), batch_size=1) * 160 + 160
             if middle_pos > 320:
                 middle_pos = 320
             if middle_pos < 0:
@@ -145,11 +146,37 @@ class car_control:
         for img_path in glob.glob(path + '/test/*.jpg'):
             test_img = read_img(img_path)
 
-            middle_pos = img_path.split('_')[4]
+            middle_pos = img_path.split('_')[-3]
 
             test_img = np.array(test_img)
-            predicted_middle_pos = float(model.predict(test_img[None, :, :, :], batch_size=1)) * 80 + 160
+            predicted_middle_pos = float(model.predict(self.bird_view(test_img)[None, :, :, :], batch_size=1)) * 160 + 160
 
             # predicted_middle_pos = float(self.model.predict(np.expand_dims(test_img, axis=0), batch_size=1)) * 80 + 160
 
             print(middle_pos, predicted_middle_pos)
+
+    def unwarp(self, img, src, dst):
+        h, w = img.shape[:2]
+        M = cv2.getPerspectiveTransform(src, dst)
+
+        unwarped = cv2.warpPerspective(img, M, (w, h), flags=cv2.INTER_LINEAR)
+        return unwarped
+
+
+    def bird_view(self, source_img):
+        h, w = source_img.shape[:2]
+        # define source and destination points for transform
+
+        src = np.float32([(100, 120),
+                          (220, 120),
+                          (0, 210),
+                          (320, 210)])
+
+        dst = np.float32([(120, 0),
+                          (w - 120, 0),
+                          (120, h),
+                          (w - 120, h)])
+
+        # change perspective to bird's view
+        unwarped = self.unwarp(source_img, src, dst)
+        return unwarped

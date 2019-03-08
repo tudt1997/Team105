@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from __future__ import print_function
+# from __future__ import print_function
 import roslib
 
 roslib.load_manifest('team105')
@@ -11,10 +11,9 @@ from sensor_msgs.msg import CompressedImage
 from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import matplotlib.pyplot as plt
-from sign_detection import detect_sign
-from sign_classi import predict
-from lane_detector import lane_detector
 from car_control import car_control
+from sign_detection import SignDetection
+from lane_detector import lane_detector
 from object_detection import detect_object
 import time
 TEAM_NAME = 'team105'
@@ -29,6 +28,7 @@ class image_converter:
         self.ld = lane_detector()
         self.curr_time = "100"
         rospy.Rate(10)
+        self.sd = SignDetection()
         self.i = 0
         self.is_turning = False
 
@@ -39,7 +39,9 @@ class image_converter:
             image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
             # NOTE: image_np.shape = (240,320,3)
 
-            out_img, sign = detect_sign(image_np)
+            out_img, sign = self.sd.detect_sign(image_np)
+            # out_img = image_np
+            # sign = (0, 0, 0, 0, 0)
             # sign_size = 0
             #cv2.imshow("Object", img_object)
             #cv2.waitKey(1)
@@ -55,7 +57,7 @@ class image_converter:
             cv2.waitKey(1)
 
             # drive
-            if self.i == 4:
+            if self.i == 0:
                 self.is_turning,steer_angle,speed = self.cc.control(sign, (middlePos[0], middlePos[2]), image_np)
                 self.i = 0
             else:

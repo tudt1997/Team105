@@ -2,531 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db56a82a-e29b-4c38-a6a6-f33d8a974008" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team105.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team105.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/100_0_30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CDS/100_0_30.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068488283_-4.28628395094_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068488589_-4.08838525734_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068488899_-2.59335309209_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068489209_-2.77727018059_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068489522_-1.51472186974_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068489835_-0.172130029371_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068490145_0.866084616272_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068490456_0.211715802683_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068490760_0.433237713014_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068491060_1.59029898376_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068491372_-1.38071402312_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068491686_0.302260182593_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068491987_-1.42471376016_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068492287_-0.834566952447_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068492601_-0.436299649958_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068492905_-2.31923920402_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068493205_-2.58243053474_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068493518_-2.67024575723_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068493826_-2.54544747253_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068494139_-2.71859853486_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068494440_-0.0760288004028_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068494740_-2.75661498251_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068495051_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068495355_-8.90300862412_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068495659_-8.22136577677_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068495959_-3.8914917696_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068496259_-6.88960191863_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068496560_-4.92908277928_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068496884_3.18581022219_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068497191_-3.05862190152_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068497504_0.301771664133_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068497806_1.6747954556_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068498116_1.44102755138_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068498423_2.25513453231_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068498724_4.63707590276_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068499036_5.55553480436_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068499342_6.52402651644_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068499646_1.76455771632_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068499962_0.561448066706_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068500281_0.495065787341_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068500600_0.48992135927_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068500912_1.33226014533_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068501224_2.01210594117_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068501530_2.16124125835_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068501838_3.00704683602_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068502141_3.42673323828_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068502453_4.87566420936_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068502753_3.50775063723_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068503062_6.27943963853_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068503366_4.83325822243_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068503671_6.30922959251_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068503975_4.32491090214_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068504275_4.35965651184_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068504586_3.46550153424_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068504890_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068505201_6.26190758885_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068505511_2.67037347787_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068505820_1.55895170905_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068506121_0.511906158034_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068506433_0.604430018705_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068506741_-0.923798208512_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068507052_1.07084373648_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068507363_1.92012025742_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068507671_1.52139978621_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068507971_0.986486400581_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068508271_0.92596921218_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068508582_0.105341680796_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068508885_0.507337369557_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068509189_1.09618755807_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068509492_1.40321024828_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068509828_1.10048526678_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068510133_0.981495192633_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068510443_2.02857628927_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068510756_2.18844598531_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068511068_2.81703267809_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068511375_2.91633435514_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068511680_3.23386146355_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068511985_3.43128041389_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068512285_3.05426884566_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068512588_2.84553268983_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068512895_4.19294225786_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068513202_1.74023566941_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068513504_1.11880655973_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068513804_0.59028451958_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068514106_3.36217706381_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068514406_2.98432933655_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068514707_2.69192360885_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068515021_3.27043234335_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068515322_2.85293665175_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068515632_3.20875981412_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068515938_5.56497032953_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068516244_7.59140307738_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068516560_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068516869_18.2068019619_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068517170_8.86893751362_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068517476_3.25989902135_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068517799_3.20037202733_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068518105_3.30463021778_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068518420_3.46980295051_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068518720_3.05981240937_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068519020_2.790678815_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068519320_2.49550091866_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068519624_2.24656405558_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068519924_16.8274368541_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068520237_1.26009767543_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068520539_0.165321367936_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068520855_0.0842696190605_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068521157_0.906078241806_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068521473_2.17016146563_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068521788_2.91377241451_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068522090_4.67863609539_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068522393_-0.55410578249_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068522705_4.75072909104_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068523022_1.634507712_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068523336_0.569776208797_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068523642_0.373262843526_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068523955_0.433592603152_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068524256_0.0896267675798_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068524558_-0.155819794893_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068524872_-0.00296198393612_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068525178_0.468194373151_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068525494_-0.41733700677_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068525806_0.0542875730616_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068526121_-0.690093189397_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068526421_-1.73494497329_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068526730_0.37389521122_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068527036_-1.50408798644_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068527361_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068527666_-2.61054144142_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068527970_0.911361459957_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068528273_0.295548060485_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068528577_-2.55938507154_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068528886_1.94923898724_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068529202_1.37711228678_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068529505_-4.24517013413_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548068529823_-3.1610155216_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124845540_-4.97132078876_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124845843_-4.6123718762_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124850636_-3.18221178512_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124850937_-3.01953720385_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124851239_-1.90980739116_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124851549_-1.23276618489_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124851857_0.567834591664_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124852168_1.0177017592_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124852474_0.722600623801_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124852780_0.656922857456_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124853093_1.47984162305_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124853404_-0.913939925514_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124853705_-0.415881834892_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124854014_-0.919091627072_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124854321_1.82237205493_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124854625_0.0287403524683_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124854928_-1.75925266199_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124855232_-1.31319279354_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124855543_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124855845_-3.2874107839_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124856151_-2.61280735014_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124856452_0.698642104108_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124856760_-15.9169121264_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124857076_-14.1144483614_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124857382_-9.8807509211_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124858887_-2.5909448099_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124859189_2.07081276955_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124859491_9.43694179578_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124859801_34.7770323091_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124860102_42.4858841938_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124860404_35.0592786588_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124860704_-4.26717252434_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124861012_14.1233910613_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124861322_-9.22610513704_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124861623_-34.8168767943_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124861926_-34.4806952259_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124862235_-5.74203765529_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124862536_-10.1812413049_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124862841_4.04689691364_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124863144_-4.83003228227_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124863453_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124863758_0.256571121662_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124864068_9.55959669577_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124864369_-16.0281879955_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124864672_1.44153979097_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124864980_19.6444343921_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124865294_15.3020371672_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124865602_15.7774488893_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124865904_0.743792869962_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124866209_1.32472841631_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124866519_-0.359993697414_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124866827_1.81776437106_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124867151_0.193121512059_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124867459_3.90282522913_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124867771_4.70704020753_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124868074_1.84737693314_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124868376_1.43233970064_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124868676_1.83540093575_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124868991_4.83897149484_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124869293_4.06759824928_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124869606_4.39844211983_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124869909_3.41883568603_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124870223_5.93713733028_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124870532_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124870832_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124871141_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124871452_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124871767_28.1540861216_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124872077_-9.04908833897_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124872391_-20.1235842588_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124872703_-24.9199589236_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124873006_-17.8152470637_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124873310_-4.41458905087_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124873610_-2.44177274814_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124873912_-1.75653529871_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124874215_0.734178742586_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124874527_-0.464670625501_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124874838_1.20994316694_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124875156_3.80767791705_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124875461_-1.33858338958_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124875762_-0.69374529575_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124876063_2.27596279761_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124876373_2.02524396573_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124876677_0.625036544709_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124876979_1.8816566898_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124877297_1.22762915416_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124877608_1.96418054738_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124877921_1.39204374305_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124878233_1.21793510646_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124878535_2.15909084627_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124878843_2.64244978234_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124879158_4.14518652595_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124879469_3.67921773792_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124879772_2.79267091528_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124880074_11.5381871196_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124880382_5.27222138985_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124880683_-2.06130332967_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124880984_4.19920628579_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124881300_-1.77548424177_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124881603_8.28648695676_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124881921_-1.59762688112_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124882234_8.44916040982_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124882535_7.23986953025_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124882836_3.97779999622_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124883138_4.64665064645_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124883451_1.67845816758_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124883755_5.46770046469_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124884069_15.5423870689_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124884372_11.768749148_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124884680_6.68271219737_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124884982_3.78582864281_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124885298_2.87730757215_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124885615_3.5745326574_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124885921_3.98360170321_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124886230_2.79087131204_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124886533_2.80384506018_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124886834_1.69334029056_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124887135_1.8380375316_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124887444_1.30805977785_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124887747_1.12643807173_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124888052_1.67225533719_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124888366_2.49402367446_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124888668_3.2467880959_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124888968_2.64217806892_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124889269_2.55606987238_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124889577_1.05116934352_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124889884_0.360511575949_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124890201_0.486604671035_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124890516_1.44469559864_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124890823_0.733849009644_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124891137_-0.760366615835_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124891456_0.231129916986_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124891759_-1.33095505339_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124892059_0.345146529176_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124892375_0.475423012539_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124892694_-2.79869991236_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124892995_-2.58990723193_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124893305_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124893605_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124893907_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124894218_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124894522_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124894828_-43.9854599443_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124895145_-29.890567088_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124895456_-5.15104495869_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124895767_9.86132993341_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124896067_34.4824568749_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124896385_2.24240622101_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124896698_-5.32474073333_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124897014_-1.56603892662_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124897331_-1.53000443415_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124897634_-4.6743636562_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124897947_-6.47737433061_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124898263_-5.70837408994_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124898564_-8.22929583524_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124898885_-6.62680608537_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124899196_-3.00547495735_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124899502_-0.571361845221_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124899803_-0.130258331856_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124900104_-0.863811999421_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124900416_1.47131354135_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124900730_0.717442246456_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124901030_2.45378891523_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124901333_1.99575443145_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124901647_3.31454155854_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124901962_14.3838440834_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124902269_1.35101142688_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124902574_5.09950071434_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124902874_10.3446619623_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124903183_9.363047252_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124903483_7.25775615486_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124903783_6.05998783824_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124904091_4.91076151373_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124904403_1.28865928961_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124904703_0.998814689311_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124905014_5.71544570889_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124905328_5.47898135103_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124905633_2.7920504562_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124905946_2.0503783853_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124906246_0.893305237875_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124906548_3.56550597851_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124906863_1.78436064561_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124907163_2.12634691505_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124907479_3.62974275445_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124907779_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124908085_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124908398_50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124908714_-30.8179614886_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124909019_-22.7091721491_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124909332_-6.6754507049_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124909646_11.5637250862_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124909947_17.3823413518_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124910249_5.81191237428_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124910555_5.58031412487_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124910864_4.33646282578_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124911176_6.11459889217_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124911476_3.83731255601_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124911786_4.65041192146_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124912100_1.36770021813_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124912414_0.52144903945_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124912714_1.08300886085_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124913020_1.5109009512_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124913321_-0.162163889597_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124913633_0.474552498951_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124913935_0.637171372982_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124914253_0.74730882132_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124914555_0.205187387456_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124914869_-0.30597148137_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124915182_-0.818410144322_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124915487_0.349593239157_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124915792_1.32857275641_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124916092_1.60781870233_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124916395_1.5793790008_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124916712_0.611929112186_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124917015_3.50921972373_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124917319_3.12077824868_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124917632_4.31788046476_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124917941_6.03608171235_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124918252_6.01292918285_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124918553_5.23368786528_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124918868_6.31018443877_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124919171_6.36979733188_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124919474_4.8095422656_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124919789_4.05009884138_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124920089_4.25745309717_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124920389_2.78696523982_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124920694_2.86155573898_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124921003_2.73121137906_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124921319_1.51174448007_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124921622_1.63262705232_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124921923_2.41162431166_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124922239_2.47058997164_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124922546_3.22411356794_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124922864_2.86529607392_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124923172_4.39524430114_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124923472_4.78489581859_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124923773_5.52820020434_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124924087_3.78685486808_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124924389_3.77188986996_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124924689_2.45793561549_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124924990_1.94488978847_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124925295_1.69434581515_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124925606_0.200478745921_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124925923_-0.815879454551_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124926224_-4.1773410117_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124926532_-2.68930375066_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124926834_-1.25341925862_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124927149_0.556118314283_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124927450_1.44452101244_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124927765_1.03706259078_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124928066_0.185945793841_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124928381_0.389647131454_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124928681_0.284091445361_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124928985_-0.458322818746_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124929303_-1.21279217518_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124929618_2.42150122211_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124929933_0.0462901657859_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124930235_-1.8993522801_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124930553_-2.00780342831_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124930854_-2.83718945342_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124931163_-1.31084043106_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124931465_-5.27978452432_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124931770_0.741611958959_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124932082_-16.6999961974_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124932383_-14.3117753405_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124932698_-11.5919135174_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124933000_-8.4784934757_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124933300_-5.01739347811_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124933600_-0.388962107844_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124933917_-5.57124537352_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124934218_-4.50165481868_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124934518_-4.43407884889_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124934820_0.448887109359_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124935133_1.09397505877_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124935433_1.57056574767_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124935746_2.43756113464_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124936054_4.15777820639_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124936358_5.93928030111_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124936670_5.91166947469_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124936986_3.50999617078_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124937292_0.639645697959_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124937601_0.139612177145_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124937902_-0.299049466046_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124938202_0.607118496347_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124938503_1.50826336957_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124938819_1.58915501101_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124939123_3.30070402911_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124939436_2.44495110944_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124939742_2.94481905529_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124940056_4.87288650532_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124940359_4.82304061497_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124940659_4.26429147233_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124940973_5.77212766047_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124941280_4.63337825638_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124941594_5.28488787013_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124941896_4.17810184935_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124942202_3.86422490448_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124942514_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124942821_4.41268874196_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124943125_2.01339151719_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124943580_0.718537212419_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124943888_-0.158245339711_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124944188_-4.35168685088_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124944489_2.05954496464_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124944790_1.90032053068_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124945090_-0.880374949719_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124945409_0.42731528871_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124945712_0.795032344583_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124946026_1.09457644739_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124946344_1.53014386525_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124946645_1.06949134975_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124946958_0.83847219385_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124947276_0.857443658305_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124947590_1.2032490771_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124947891_1.41716378542_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124948191_1.99793943304_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124948506_2.53862783655_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124948806_2.90908201655_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124949108_3.1870372868_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124949409_3.73186445742_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124949725_3.19630629291_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124950027_2.32011376944_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124950328_4.69361555539_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124950636_1.95780977817_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124950941_1.51671078491_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124951244_-1.69208327849_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124951557_2.58307891791_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124951861_2.98504030706_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124952176_1.80249136573_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124952493_2.39078843325_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124952808_2.97222683822_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124953121_2.74479979709_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124953427_5.20777438849_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124953740_7.87166690723_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124954042_11.2509442378_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124954358_10.8988782374_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124954661_12.8552554532_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124954975_3.5126862058_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124955280_3.08377972693_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124955594_3.30234249675_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124955894_3.71560179312_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124956200_3.15124804486_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124956510_2.79514915562_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124956816_2.57975459697_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124957126_-0.164553104601_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124957428_19.9001923547_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124957742_3.52282784163_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124958044_0.087226974779_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124958345_0.300209424642_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124958648_0.290524726946_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124958948_1.52216348133_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124959261_2.13758227134_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124959567_-0.127937013139_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124959882_6.12147392261_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124960189_5.48258225351_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124960495_1.94157543391_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124960801_0.867063667515_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124961114_0.713611089108_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124961415_0.616155371654_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124961715_0.271237354872_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124962031_0.0905357013964_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124962331_0.220968420463_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124962631_-0.434166671575_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124962933_-0.539027630167_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124963248_0.025569296127_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124963548_-0.692531862028_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124963867_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124964180_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124964480_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124964798_-50_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124965098_17.8672800326_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124965398_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124965709_0_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124966023_-28.5888893751_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124966323_-26.2933934506_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124966628_-5.71482153802_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124966930_-1.59310842908_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124967230_-1.4470784889_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124967531_-2.18501128769_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124967850_-3.93747136524_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124968157_-5.56703214235_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124968457_-5.28984270403_40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDS/1548124968760_0_30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cds/cds.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/cds/cds.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cds/cds_final.weights" beforeDir="false" afterPath="$PROJECT_DIR$/cds/cds_final.weights" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cds/labels.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cds/labels.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/team105.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/team105.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/test.launch" beforeDir="false" afterPath="$PROJECT_DIR$/launch/test.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/new-weights.03-0.36097.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/sign_classi_param32_small" beforeDir="false" afterPath="$PROJECT_DIR$/param/sign_classi_param32_small" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/augmentation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/car_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/car_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lane_detector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model.py.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_keras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/object_detection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sign_classi.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sign_classi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sign_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sign_detection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/team105_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/team105_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/yolo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -550,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model_keras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="120">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding>
                 <element signature="e#33#59#0" expanded="true" />
               </folding>
@@ -562,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -571,8 +75,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sign_classi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lane_detector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4125">
+              <caret line="278" column="39" selection-start-line="278" selection-start-column="39" selection-end-line="278" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -580,38 +96,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/team105_node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="73" selection-end-column="46" />
-              <folding>
-                <element signature="e#22#59#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="46">
+              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/car_control.py">
+        <entry file="file://$PROJECT_DIR$/src/sign_detection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/augmentation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/car_control.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state>
+              <caret selection-end-line="22" selection-end-column="47" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -638,12 +151,13 @@
         <option value="$PROJECT_DIR$/src/triangle.py" />
         <option value="$USER_HOME$/Desktop/catkin_ws/src/Team105/src/cds.py" />
         <option value="$PROJECT_DIR$/src/cds.py" />
-        <option value="$PROJECT_DIR$/src/sign_classi.py" />
-        <option value="$PROJECT_DIR$/src/sign_detection.py" />
         <option value="$PROJECT_DIR$/src/lane_detector.py" />
         <option value="$PROJECT_DIR$/src/model.py" />
-        <option value="$PROJECT_DIR$/src/team105_node.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/sign_detection.py" />
+        <option value="$PROJECT_DIR$/src/sign_classi.py" />
+        <option value="$PROJECT_DIR$/src/team105_node.py" />
+        <option value="$PROJECT_DIR$/src/test_video.py" />
         <option value="$PROJECT_DIR$/src/car_control.py" />
       </list>
     </option>
@@ -660,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -682,10 +195,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/cds-cnn-middle-pos" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -799,13 +313,6 @@
     <entry file="file://$USER_HOME$/Desktop/catkin_ws/src/Team105/src/cds.py" />
     <entry file="file://$PROJECT_DIR$/src/cds.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/sign_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/yolo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -817,7 +324,14 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/test_angle/cnn-steering-angle.py" />
-    <entry file="file://$PROJECT_DIR$/src/lane_detector.py" />
+    <entry file="file://$PROJECT_DIR$/src/augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_video.py" />
     <entry file="file://$PROJECT_DIR$/src/object_detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -827,61 +341,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sign_classi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/team105_node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="73" selection-end-column="46" />
-          <folding>
-            <element signature="e#22#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/car_control.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/augmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model_keras.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="120">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding>
             <element signature="e#33#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.py">
+    <entry file="file://$PROJECT_DIR$/src/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sign_classi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lane_detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="278" column="39" selection-start-line="278" selection-start-column="39" selection-end-line="278" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sign_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/team105_node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/car_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="101" column="17" lean-forward="true" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
         </state>
       </provider>
     </entry>
