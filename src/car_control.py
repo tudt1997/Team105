@@ -12,6 +12,7 @@ path = rospkg.RosPack().get_path('team105')
 from augmentation import read_img
 import glob
 import keras
+from sign_detection import detect_sign
 
 import tensorflow as tf
 print(tf.__version__)
@@ -64,6 +65,9 @@ class car_control:
         steerAngle = 0
 
         img_array = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+	# detect sign
+	img_out, _ = detect_sign(img_array)
+
         img_bv = self.bird_view(img_array)
         middle_pos = float(self.model.predict(img_bv[None, :, :, :], batch_size=1)) * 160 + 160
 

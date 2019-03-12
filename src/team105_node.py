@@ -12,8 +12,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import matplotlib.pyplot as plt
 from car_control import car_control
-# from sign_detection import SignDetection
-from lane_detector import lane_detector
+
 import time
 
 
