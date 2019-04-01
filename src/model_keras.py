@@ -14,12 +14,14 @@ def resize(img):
     """
     from keras.backend import tf as ktf
     return ktf.image.resize_images(img, [100, 200])
+    # return ktf.image.resize_images(img, [120, 120])
 
 
 def nvidia_model():
     model = Sequential()
     # Cropping image
-    model.add(Lambda(lambda imgs: imgs[:, 80:, :, :], input_shape=(240, 320, 3)))
+    model.add(Lambda(lambda imgs: imgs[:, :, 50:270, :], input_shape=(240, 320, 3)))
+    # model.add(Lambda(lambda imgs: imgs[:, :, 40:280, :], input_shape=(240, 320, 3)))
     # Normalise the image - center the mean at 0
     model.add(Lambda(lambda imgs: (imgs / 255.0) - 0.5))
     model.add(Lambda(resize))

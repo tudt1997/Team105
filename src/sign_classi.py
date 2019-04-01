@@ -6,42 +6,49 @@ import rospkg
 
 class CNN32(tr.nn.Module):
     def __init__(self):
-        super(CNN32, self).__init__() #3x32x32
-        self.pool = tr.nn.MaxPool2d(2, 2)
+        super(CNN32, self).__init__()  # 3x32x32
 
-        self.conv1 = tr.nn.Conv2d(3, 32, 5) #28 (in_channels=3, out_channels=64, kernel_size=5, stride=1, padding=0)
-        #pool 14
-        self.conv2 = tr.nn.Conv2d(32, 64,3) #12
-        #pool 6
-        self.conv3 = tr.nn.Conv2d(64, 128, 3) #4
-        #pool 2
-        self.fc1 = tr.nn.Linear(128 *2 *2, 1024) #
-        self.fc2 = tr.nn.Linear(1024, 512)
-        self.fc3 = tr.nn.Linear(512, 3)
+        self.conv = tr.nn.Sequential(
+            tr.nn.Conv2d(in_channels=3, out_channels=32, kernel_size=5, stride=1, padding=2),
+            tr.nn.ReLU(),
+            tr.nn.MaxPool2d(2, 2),
 
+            tr.nn.Conv2d(32, 64, 3, 2, 1),
+            tr.nn.ReLU(),
+            tr.nn.MaxPool2d(2, 2),
 
-    def forward(self, X): #3*32*32 #3*227*227
-        X = tr.nn.functional.relu(self.conv1(X))
-        X = self.pool(X)
-        X = tr.nn.functional.relu(self.conv2(X))
-        X = self.pool(X)
-        X = tr.nn.functional.relu(self.conv3(X))
-        X = self.pool(X)
+            tr.nn.Conv2d(64, 64, 3, 1, 1),
+            tr.nn.ReLU(),
+            # tr.nn.MaxPool2d(2, 2),
+        )
 
-        X = X.view(X.size(0), -1)
+        self.fc1 = tr.nn.Sequential(
+            tr.nn.Linear(64 * 4 * 4, 30),
+            tr.nn.ReLU(),
+        )
 
-        X = tr.tanh(self.fc1(X))
-        X = tr.tanh(self.fc2(X))
-        X = tr.nn.functional.softmax(self.fc3(X), dim=1)
-        return X
+        self.fc2 = tr.nn.Sequential(
+            tr.nn.Linear(30, 3),
+            tr.nn.Softmax(dim=1),
+        )
+
+    def forward(self, x):
+        # drop = tr.nn.Dropout(droprate)
+
+        x = self.conv(x)
+        x = x.view(x.size(0), -1)
+        x = self.fc1(x)
+        # x = drop(x)
+        x = self.fc2(x)
+        return x
 
 class Net:
     def __init__(self):
-        path = rospkg.RosPack().get_path('team105')
+        path = rospkg.RosPack().get_path('team105_detectsign')
 
         self.device = tr.device("cuda:0" if tr.cuda.is_available() else "cpu")
         self.net = CNN32().to(self.device)
-        self.net.load_state_dict(tr.load(path + '/param/sign_classi_param_9932_half', map_location=self.device))
+        self.net.load_state_dict(tr.load(path + '/param/param_16ka3', map_location=self.device))
 
     def predict(self, img, new_size=32):
         img = np.array(img, dtype= np.float32) / 255.
